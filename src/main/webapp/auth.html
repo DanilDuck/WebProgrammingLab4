@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ПОМОГИТЕ!</title>
+    <link href="https://osu.ppy.sh/images/favicon/favicon-32x32.png" rel="icon">
+    <link href="css/auth.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Даниил Дагаев P32141
+        <br>
+        Вариант: 67843
+        <div class="headPics">
+            <div class="social">
+                <a href="https://github.com/DanilDuck" target="_blank"><img src="images/git.png" alt="GitHub"></a>
+                <a href="https://se.ifmo.ru/courses/web" target="_blank"><img src="images/sticker.png" alt="GitHub"></a>
+            </div>
+        </div>
+        <div id="error"></div>
+    </h2>
+</div>
+<div id="auth" class="main">
+    <input type="checkbox" id="chk" aria-hidden="true" @click="registration = !registration">
+    <div class="signup">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="username" placeholder="login" required="" v-model="username">
+        <input type="password" name="password" placeholder="password" required="" v-model="password">
+        <button v-on:click="authenticate">Create account</button>
+    </div>
+
+    <div class="login">
+        <label for="chk" aria-hidden="true">Sign in</label>
+        <input type="text" name="username" placeholder="login" required="" v-model="username">
+        <input type="password" name="password" placeholder="password" required="" v-model="password">
+        <button v-on:click="authenticate">Log in</button>
+    </div>
+</div>
+<script src="js/auth.js"></script>
+<script src="js/utils.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

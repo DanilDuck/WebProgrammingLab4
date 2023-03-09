@@ -1,0 +1,313 @@
+
+@media screen and (min-width: 1230px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Gill Sans", sans-serif;
+        background: #2a2828;
+        color: #ddd;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .header {
+        margin-bottom: 30px;
+        padding: 15px;
+        font-size: 12px;
+        box-shadow: 5px 5px 30px 6px #3c354a;
+        background: #494848;
+        border-radius: 5%;
+    }
+
+    .main {
+        width: 350px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px 6px #3c354a;
+        background: #494848
+    }
+
+    .signup {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .main label {
+        color: #fff;
+        font-size: 2.0em;
+        justify-content: center;
+        display: flex;
+        margin: 60px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .main input {
+        width: 60%;
+        height: 20px;
+        background: #eee;
+        justify-content: center;
+        display: flex;
+        margin: 20px auto;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    .main button {
+        width: 60%;
+        height: 40px;
+        justify-content: center;
+        display: block;
+        color: #fff;
+        border: none;
+        background: #624976;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 20px auto 10px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .main button:hover {
+        background: #73179c;
+    }
+
+    .login {
+        height: 460px;
+        background: #5a4868;
+        transform: translateY(-180px);
+    }
+
+    .login label {
+        color: white;
+        transform: scale(.6);
+    }
+
+    #chk {
+        display: none;
+        background: #494848;
+    }
+
+    #chk:checked ~ .login {
+        transform: translateY(-600px);
+        background: #494848;
+    }
+
+    #chk:checked ~ .login label {
+        transform: scale(1);
+        background: #494848;
+    }
+
+    .headpics {
+        background: #494848;
+        margin-top: 8px;
+    }
+
+    .headpics img {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin: 0 7px;
+    }
+
+    .headpics img:hover {
+        box-shadow: 2px 2px 5px 4px #3c354a;
+    }
+
+    .login:hover {
+        background: #73179c;
+    }
+
+    #chk:checked ~ .signup label {
+        transform: scale(.6);
+        background: #494848;
+    }
+}
+
+
+
+@media only screen and  (max-width: 1229px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Gill Sans", sans-serif;
+        background: #252424;
+        color: #ddd;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 250%;
+    }
+
+    .header {
+        width: 75%;
+        margin-bottom: 100px;
+        padding: 15px;
+        font-size: 12px;
+        box-shadow: 5px 5px 30px 6px #3c354a;
+        background: #494848;
+        border-radius: 5%;
+    }
+
+    .main {
+        width: 500px;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px 6px #3c354a;
+        background: #494848;
+    }
+
+    .signup {
+        font-size: 120%;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .main label {
+        color: #fff;
+        font-size: 2.0em;
+        justify-content: center;
+        display: flex;
+        margin: 60px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .main input {
+        width: 60%;
+        height: 50px;
+        background: #eee;
+        justify-content: center;
+        display: flex;
+        margin: 20px auto;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 120%;
+    }
+
+    .main button {
+        width: 70%;
+        height: 80px;
+        justify-content: center;
+        display: block;
+        color: #fff;
+        border: none;
+        background: #624976;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 20px auto 10px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .main button:hover {
+        background: #73179c;
+    }
+
+    .login {
+        height: 460px;
+        background: #5a4868;
+        transform: translateY(-200px);
+        font-size: 120%;
+    }
+
+    .login label {
+        color: white;
+        transform: scale(.6);
+    }
+
+    #chk {
+        display: none;
+        background: #494848;
+    }
+
+    #chk:checked ~ .login {
+        transform: translateY(-700px);
+        background: #494848;
+    }
+
+    #chk:checked ~ .login label {
+        transform: scale(1);
+        background: #494848;
+    }
+
+    .headpics {
+        background: #494848;
+        margin-top: 8px;
+    }
+
+    .headpics img {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin: 0 7px;
+    }
+
+    .headpics img:hover {
+        box-shadow: 2px 2px 5px 4px #3c354a;
+    }
+
+    .login:hover {
+        background: #73179c;
+    }
+
+    #chk:checked ~ .signup label {
+        transform: scale(.6);
+        background: #494848;
+    }
+}
