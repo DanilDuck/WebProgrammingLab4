@@ -15,7 +15,7 @@ new Vue({
                 password: this.password,
                 registration: this.registration
             }))
-                .then(() => location.href = 'index.html')
+                .then(() => location.href = 'main.html')
                 .catch(error => notifyError(error.response.data))
         }
     }
